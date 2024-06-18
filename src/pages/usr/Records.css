@@ -1,0 +1,26 @@
+.record-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.record-div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin: 1rem;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.button {
+    padding: .6rem 1.5rem;
+    border: none;
+    background-color: #036C53;
+    border-radius: 1rem;
+}
+
+.document-cont {
+    border: 1px solid #00000050;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}

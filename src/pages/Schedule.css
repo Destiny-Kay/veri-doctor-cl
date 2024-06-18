@@ -1,0 +1,140 @@
+.schedule-cont{
+    margin-left: 2rem;
+}
+
+.schedule-cont button {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: hsl(166, 95%, 22%);
+    margin-left: 2rem;
+    border: none;
+}
+
+.schedule-cont button:hover {
+    cursor: pointer;
+}
+
+.schedule-cont-disp {
+    border: 1px solid #424443;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.time-picker {
+    border: 2px solid #036C53;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 200px;
+}
+
+.time-picker img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.time-picker img:hover {
+    transform: scale(1.5);
+}
+
+.time-picker-cont {
+    max-width: 200px;
+}
+
+.time-picker:hover{
+    cursor: pointer;
+    color: #f6f6f6;
+    background-color: #036C53;
+}
+
+.time-picker p {
+    font-weight: bold;
+}
+
+
+.del-icon {
+    margin-right: 2rem;
+}
+
+.del-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.timeslot-cont {
+    max-width: 1020px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.timeslot-popup-wrapper {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #00000050;
+    z-index: 4;
+}
+
+.timeslot-popup-wrapper button {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: hsl(166, 95%, 22%);
+    margin-left: 2rem;
+    border: none;
+}
+.timeslot-popup-wrapper button:hover{
+    cursor: pointer;
+}
+
+.timeslot-popup {
+    max-width: 600px;
+    z-index: 2;
+    margin: 4rem auto;
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.timeslot-popup-form input{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 40px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    color: #000;
+}
+
+.timeslot-popup button {
+    margin-top: 2rem;
+}
+
+.calendar-cont {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.cal-sch {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    max-width: 500px;
+}
+

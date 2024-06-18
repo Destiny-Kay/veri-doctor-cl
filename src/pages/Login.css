@@ -1,0 +1,90 @@
+.form{
+    width: 50%;
+    position: block;
+    border: 1px solid #000;
+    border-radius: 20px;
+    min-width:300px;
+    max-width: 500px;
+    min-height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: 2rem;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+}
+
+.form-label{
+    display: block;
+}
+
+.form-label select {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.form-input{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.submit-button {
+    width: 200px;
+    height: 43px;
+    margin: auto;
+    background-color: #036C53;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+.red-input {
+    border: 2px solid red;
+}
+
+.loading-btn {
+    width: 200px;
+    height: 43px;
+    margin: auto;
+    background-color: #021d17;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+.checkbox-wrapper a {
+    color: blue;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+
+.checkbox-wrapper input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.prof-cont {
+    margin-left: 2rem;
+}
+.del-button {
+    padding: .5rem 1rem;
+    color: red;
+    background-color: #fff;
+    border-radius: .5rem;
+    border: 1px solid red;
+}
+
+.del-button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}

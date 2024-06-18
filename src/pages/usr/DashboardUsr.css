@@ -1,0 +1,49 @@
+.dash-cont-usr {
+    padding: 0 1rem;
+}
+
+.box-dash {
+    border:2px solid #036C53;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.dash-stats-usr {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.vitals-div-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.vitals-div-wrapper .vitals-div-el {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.vital-large {
+    font-size: 3rem;
+}
+
+.appoint-cont {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: .5rem;
+    gap: 2rem;
+    height: 20vh;
+    max-width: 700px;
+    max-height: 40vh;
+    overflow-y: scroll;
+}

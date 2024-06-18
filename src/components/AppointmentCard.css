@@ -1,0 +1,408 @@
+.appointment-card {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    max-width: 80vw;
+}
+
+.image-cont {
+    display: flex;
+}
+
+.image-cont div {
+    margin-left: 1rem;
+}
+
+.appointment-card .doc-information:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.appointment-card .doc-information {
+    background-color: #00000030;
+    padding: .5rem;
+    border-radius: 2rem;
+}
+.PLACED {
+    color: #0ac341;
+}
+
+.ATTENDED {
+    color: #264edf;
+}
+
+.CANCELED {
+    color: #ec4b2b;
+}
+
+.appointment-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4;
+}
+
+.appointment-popup-div {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 4rem auto;
+    width: 800px;
+    max-width: 90vw;
+    max-height: 80vh;
+    text-align: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.appointment-popup-div .close-popup-icon {
+    position: relative;
+    left: -40%;
+}
+
+.appointment-popup-div .doc-details {
+    margin: auto;
+    text-align: left;
+    max-width: 600px;
+}
+
+.appointment-popup-div .doc-details span {
+    font-weight: bold;
+}
+
+.appointment-popup-div .close-popup-icon:hover {
+    cursor: pointer;
+}
+
+.book-link {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.book-link a {
+    background-color: #00000030;
+    padding: .5rem;
+    border-radius: 2rem;
+}
+
+.book-link a:hover {
+    text-decoration: underline;
+}
+.h-80 {
+    height: 80vh;
+}
+
+.appointment-popup-div button {
+    background-color: #036C53;
+    border: none;
+    border-radius: .5rem;
+    width: 100px;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+.appointment-popup-div .button-active {
+    border: none;
+    border-radius: .5rem;
+    width: 100px;
+    padding: 1rem;
+    margin: 0 2rem;
+    background-color: #041e18;
+}
+
+.appointment-popup-div button:hover{
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    width: 100%;
+}
+
+.button {
+    background-color: #036C53;
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+}
+
+.button:first-child {
+    margin-right: .5rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #04382c;
+}
+
+.vitals-wrapper {
+    padding: 2rem;
+}
+
+.vitals-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,300px);
+}
+
+.vitals-div {
+    border: 1px solid green;
+    border-radius: .5rem;
+}
+
+.vitals-value{
+    font-size: 2.5rem;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.type-input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 300px;
+    display: block;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+#record-file {
+    text-align: center;
+    color: #000;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+#image-view {
+    width: 100%;
+    height: 90%;
+    border-radius: 1rem;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+}
+
+#image-view span {
+    color: #777;
+    display: block;
+    font-size: .8rem;
+}
+
+#record-file:hover {
+    cursor: pointer;
+}
+
+#record-description{
+    width: 50%;
+    min-height: 100px;
+    min-width: 250px;
+    border-radius: .5rem;
+    background-color: #fff;
+    color: #000;
+    justify-content: center;
+    padding: 1rem;
+    scrollbar-width: none;
+    margin-bottom: 2rem;
+}
+
+
+.vitals-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-label{
+    display: block;
+}
+
+.form-label select {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.form-input{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 40px;
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+}
+
+.upload-area {
+    height: 200px;
+    border-radius: 1rem;
+    border: 2px dashed #bbb5ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upload-area:hover {
+    cursor: pointer;
+}
+.upload-area p {
+    color: #6990f2;
+}
+
+section .row {
+    background: #e9f0ff;
+    list-style: none;
+    margin: 1rem auto;
+    padding: 1rem .8rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    max-width: 500px;
+}
+
+section .content {
+    width: 100%;
+}
+.progress-area .row .content {
+    width: 100%;
+    margin-left: 1.2rem;
+}
+
+.progress-area .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-area .progress-bar {
+    height: 6px;
+    width: 100%;
+    background-color: #fff;
+    margin: 4px;
+    border-radius: 2rem;
+}
+
+.progress-bar .progress {
+    height: 100%;
+    width: 70%;
+    background-color: #6990f2;
+    border-radius: inherit;
+}
+
+.uploaded-area::-webkit-scrollbar {
+    width: 12px;
+}
+
+.uploaded-area {
+    max-height: 230px;
+    overflow-y: scroll;
+    margin: 2rem 0  ;
+}
+
+.uploaded-area .row .remove-icon {
+    cursor: pointer;
+}
+
+.uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details {
+    display: flex;
+    margin-left: 1.2rem;
+    flex-direction: column;
+    text-align: left;
+}
+
+.uploaded-area .row .size {
+    font-size: .8rem;
+}
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: 0.4s;
+border-radius: 34px;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: 0.4s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.active-timeslot {
+    background-color: #036C53;
+    color: #fff;
+}
+
+.available-times {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:768px) {
+    .appointment-card {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+

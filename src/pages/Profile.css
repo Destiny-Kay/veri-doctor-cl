@@ -1,0 +1,168 @@
+.profile-cont {
+    margin-left: 2rem;
+    min-width: 60vw;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.booking-link {
+    font-size: 1rem;
+    color: #036C53;
+    cursor: pointer;
+    background-color: #00000020;
+    border-radius: 1rem;
+    padding: .3rem;
+}
+
+.profile-img-cont {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.edit-prof-icon {
+    z-index: 4;
+}
+
+
+.profile-image {
+    border-radius: 50%;
+}
+
+.profile-div {
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 70vw;
+    max-width: 450px;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.edit-icon {
+    position: relative;
+    left:90%;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.edit-icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.profile-form input {
+    display: block;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#file-input{
+    text-transform: uppercase;
+    background: #1F9C42;
+    color: #fff;
+    padding: 1rem;
+    letter-spacing: .2rem;
+    border-radius: .5rem;
+}
+
+#file-input:hover {
+    cursor: pointer;
+}
+
+.profile-form textarea {
+    background-color: #fff;
+    color: #000;
+    height: 200px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.profile-form textarea {
+    margin-bottom: 5rem;
+}
+
+.select-input{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+}
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    width: 100vw;
+    height: 100vh;
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 4rem auto;
+    width: 400px;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup form input {
+    background-color: #fff;
+    height: 2.5rem;
+    border: 1px solid #000;
+    border-radius: .2rem;
+    margin: 1rem 0;
+    color: #000;
+}
+
+.popup button {
+    background-color: #036C53;
+    border: none;
+    border-radius: .5rem;
+    width: 100px;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+.popup button:hover {
+    cursor: pointer;
+}
+
+.create-fac {
+    text-decoration: underline;
+    color: blue;
+}
+
+.create-fac:hover{
+    cursor: pointer;
+}
