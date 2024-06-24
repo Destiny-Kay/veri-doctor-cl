@@ -95,9 +95,13 @@ export function BookDoc(props){
         if (dateValue === null) {
             toast.error('Please select an appointment date first')
             return
-        } else {
+        } 
+        else if (appointmentPayload.is_virtual === (null | undefined)){
+            toast.error('Please select the type of appointment first')
+        }
+        else {
             setSelectedTimeslot(index)
-            setAppointmentPayload({...appointmentPayload, 'time': item.id})
+            setAppointmentPayload({...appointmentPayload, 'time': item.id,})
             setIsopen(true)
         }
     }
@@ -129,6 +133,9 @@ export function BookDoc(props){
                     navigate(`/auth/login?rdrct=/book-doc/${doc_id}`)
                 }
                 )
+            }
+            else {
+                toast.error('An error occurred on the server')
             }
         })
         handleClosePopup()
@@ -165,6 +172,14 @@ export function BookDoc(props){
 
     const handleClosePopup = () => {
         setIsopen(false)
+    }
+
+    const handleFormChange = (event) => {
+        const {name, value} = event.target;
+        const isVirtual = value === 'true' ? true : false
+        setAppointmentPayload({
+            ...appointmentPayload, [name]: isVirtual
+        })
     }
 
     return(
@@ -224,7 +239,13 @@ export function BookDoc(props){
                                 disablePast
                                 />
                         </LocalizationProvider>
-                    </div>  
+                    </div>
+                    <h2>Type of appointment</h2>
+                    <select className='book-option' name='is_virtual' onChange={handleFormChange}>
+                        <option value=''>Select an appointment type....</option>
+                        <option value={true}>Virtual</option>
+                        <option value={false}>In person</option>
+                    </select>
                     <h2>Select a time</h2>
                     <div className='available-times'>
                         {

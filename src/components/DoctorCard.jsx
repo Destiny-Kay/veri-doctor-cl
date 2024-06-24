@@ -41,7 +41,7 @@ export function DoctorCard(props){
                         <img src={moneyIcon} alt="icon"></img>
                         {
                             props.consultation_fee ?
-                            <p>{props.consultation_fee}</p>
+                            <p>Kshs. {props.consultation_fee}</p>
                             :
                             <p>Kshs. --</p>
                         }

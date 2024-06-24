@@ -97,7 +97,7 @@ export function Appointments() {
                 {appointments ? (
                     appointments.data.length > 0 ? (
                         appointments.data.map((item) => (
-                            <AppointmentCard key={item.id} appointment_id={item.id} patient={item.patient} timeslot={item.time_slot} startTime={item.start_time} endTime={item.end_time} date={item.date} status={item.status}/>
+                            <AppointmentCard key={item.id} appointment_id={item.id} patient={item.patient} timeslot={item.time_slot} startTime={item.start_time} endTime={item.end_time} date={item.date} status={item.status} is_virtual={item.is_virtual}/>
                                 )
                             )
                         ) : (

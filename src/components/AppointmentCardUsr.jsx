@@ -161,6 +161,12 @@ export function AppointmentCardUsr(props){
                     <img src={userAvatarIcon} width={50}></img>
                     <div>
                         {
+                            props.is_virtual === true ?
+                            <p className='online-tag'>Online</p>
+                            :
+                            <p className='online-tag'>In person</p>
+                        }
+                        {
                             props.healthcareProviderData &&
                             <>
                                 <p className='doc-information' onClick={openDoctorInformation}>{props.healthcareProviderData.title}. {props.healthcareProviderData.first_name} {props.healthcareProviderData.last_name}</p>

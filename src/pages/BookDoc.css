@@ -166,3 +166,11 @@
     cursor: pointer;
     background-color: #044334;
 }
+.book-option {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 250px;
+    display: block;
+    background-color: #85D6C260;
+    color: #000;
+}

@@ -326,6 +326,13 @@ export function AppointmentCard(props) {
                 <div className='image-cont'>
                     <img src={userAvatarIcon} width={50}></img>
                     <div>
+                        {
+                            props.is_virtual === true ?
+                            <p className='online-tag'>Online</p>
+                            :
+                            <p className='online-tag'>In person</p>
+
+                        }
                         <p>{props.patient.first_name} {props.patient.last_name}</p>
                         {
                             statusChanged ?

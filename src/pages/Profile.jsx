@@ -369,7 +369,7 @@ export function Profile(props) {
                         </div>
                         <div className="profile-div">
                             <img src={editIcon} width={30} height={30} className="edit-icon" onClick={() => {setAboutPopupOpen(true)}}></img>
-                            <h3><b>Consultation fees (kshs):</b></h3>
+                            <h3><b>Consultation fee (kshs):</b></h3>
                             <p>{userProfile.consultation_fee}</p>
                             <p><b>About</b></p>
                             <p>{userProfile.about}</p>
@@ -436,7 +436,7 @@ export function Profile(props) {
                             <h2>Edit your information</h2>
                             <hr></hr>
                             <form className="popup-form" onSubmit={handleSubmitAboutInfo}>
-                                    <label>Consultation fees</label>
+                                    <label>Consultation fee</label>
                                     <input name="consultation_fee" defaultValue={userProfile.consultation_fee} onChange={handleAboutInfoChange}></input>
                                     <label>About</label>
                                     <input name="about" defaultValue={userProfile.about} onChange={handleAboutInfoChange}></input>

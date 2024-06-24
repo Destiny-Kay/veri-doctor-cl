@@ -83,6 +83,8 @@ input[type="file"] {
     padding: 1rem;
     letter-spacing: .2rem;
     border-radius: .5rem;
+    max-width: 150px;
+    text-align: center;
 }
 
 #file-input:hover {

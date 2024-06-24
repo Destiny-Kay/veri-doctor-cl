@@ -147,7 +147,7 @@ export function DashboardUsr() {
                                     <div className="appoint-cont">
                                         {
                                             recentAppointments.map((item) => (
-                                                <AppointmentCardUsr key={item.id} timeslot={item.time_slot} startTime={item.start_time} endTime={item.end_time} status={item.status} date={item.date} healthcareProviderData={item.healthcare_provider} appointment_id={item.id}/>
+                                                <AppointmentCardUsr key={item.id} timeslot={item.time_slot} startTime={item.start_time} endTime={item.end_time} status={item.status} date={item.date} healthcareProviderData={item.healthcare_provider} appointment_id={item.id} is_virtual={item.is_virtual}/>
                                             ))
                                         }
                                         <Link to={`/usr/appointments`}>View all</Link>

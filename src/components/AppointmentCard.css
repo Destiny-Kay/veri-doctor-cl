@@ -15,6 +15,15 @@
     display: flex;
 }
 
+.image-cont .online-tag {
+    background-color: #86e4ce;
+    color: #000;
+    text-align: center;
+    border-radius: 1rem;
+    padding: .2em;
+    width: fit-content;
+}
+
 .image-cont div {
     margin-left: 1rem;
 }
